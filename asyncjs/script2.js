@@ -7,26 +7,60 @@
 // async code sabse  pahle jaata hai webAPI pe, jab waha par ye resovle ho jaata hai to callstack me aa jata hai
 
 
-function getDetails(user, cb){
-    setTimeout(() => {
-        console.log("Sending the request to intagram......");
+// function getDetails(user, cb){
+//     setTimeout(() => {
+//         console.log("Sending the request to intagram......");
         
-    }, 1000);
+//     }, 1000);
 
-    setTimeout(() => {
-        console.log("Fetching Data.");
+//     setTimeout(() => {
+//         console.log("Fetching Data.");
         
-    }, 3000);
+//     }, 3000);
 
-    setTimeout(() => {
-       cb();
+//     setTimeout(() => {
+//        cb();
         
-    }, 5000);
+//     }, 5000);
 
+// }
+
+
+// getDetails("Himanshu Verma",function(){
+//     console.log("Data saved in gallery");
+    
+// })
+
+
+
+function stepOne(cb){
+    console.log("Step 1");
+    cb();
+    
+}
+function stepTwo(cb){
+    console.log("Step 2");
+    cb();
+    
+}
+function stepThree(cb){
+    console.log("Step 3");
+    cb()
+    
+}
+function stepFour(cb){
+    console.log("Step 4");
+    cb();
+    
 }
 
-
-getDetails("Himanshu Verma",function(){
-    console.log("Data saved in gallery");
-    
+stepOne(()=>{
+    stepTwo(()=>{
+        stepThree(()=>{
+            stepFour(()=>{
+                console.log("All function Executed.");
+                
+            })
+        })
+    })
 })
