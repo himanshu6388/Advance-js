@@ -33,34 +33,51 @@
 
 
 
-function stepOne(cb){
-    console.log("Step 1");
-    cb();
+// function stepOne(cb){
+//     console.log("Step 1");
+//     cb();
     
-}
-function stepTwo(cb){
-    console.log("Step 2");
-    cb();
+// }
+// function stepTwo(cb){
+//     console.log("Step 2");
+//     cb();
     
-}
-function stepThree(cb){
-    console.log("Step 3");
-    cb()
+// }
+// function stepThree(cb){
+//     console.log("Step 3");
+//     cb()
     
-}
-function stepFour(cb){
-    console.log("Step 4");
-    cb();
+// }
+// function stepFour(cb){
+//     console.log("Step 4");
+//     cb();
     
-}
+// }
 
-stepOne(()=>{
-    stepTwo(()=>{
-        stepThree(()=>{
-            stepFour(()=>{
-                console.log("All function Executed.");
+// stepOne(()=>{
+//     stepTwo(()=>{
+//         stepThree(()=>{
+//             stepFour(()=>{
+//                 console.log("All function Executed.");
                 
-            })
-        })
-    })
+//             })
+//         })
+//     })
+// })
+
+
+
+
+
+
+
+
+
+// 
+new Promise(function(res,  rej){
+    console.log("Instagram jao data lao");
+    console.log("Instagram mein data collect mein error aaya");
+    
+    
+    
 })
