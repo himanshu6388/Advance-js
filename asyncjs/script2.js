@@ -77,7 +77,5 @@
 new Promise(function(res,  rej){
     console.log("Instagram jao data lao");
     console.log("Instagram mein data collect mein error aaya");
-    
-    
-    
-})
+
+});
